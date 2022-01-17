@@ -1,0 +1,63 @@
+module foofarming
+{
+	imports
+	{
+		Base
+	}
+
+/**********************************************************************/
+/******************************Seeds***************************************/
+/**********************************************************************/
+
+
+    item fooSeed
+	{
+	    DisplayCategory = Gardening,
+		Type				=		Normal,
+		DisplayName			=		foo Seeds,
+		Icon				=		TZ_CabbageLettuceSeeds,
+		Weight				=		0.009,
+		SurvivalGear = TRUE,
+		WorldStaticModel = Seeds_Ground,
+	}
+
+   
+/**********************************************************************/
+/***************************Seed Packages************************************/
+/**********************************************************************/
+
+
+    item fooSeedbag
+	{
+	    DisplayCategory = Gardening,
+		Type				=		Normal,
+		DisplayName			=		foo Seeds Packet,
+		Icon				=		TF_SeedpackEggplant,
+		Weight				=		0.1,
+		SurvivalGear = TRUE,
+		WorldStaticModel = CarrotSeedBag_Ground,
+	}
+
+/*************************~~~~~~~~~~~~~~~~~****************************/
+/******************************Recipes*************************************/
+/*************************~~~~~~~~~~~~~~~~~****************************/
+
+	recipe Open Packet of fooSeeds
+	{
+		fooBagSeed,
+  
+        Result:fooSeed=50,
+        Time:20.0,
+        Category:Farming,
+        Sound:OpenSeedPacket,
+	}
+	 
+	recipe Put foo Seeds in Packet
+    {
+        fooSeed=50,
+
+        Result:fooBagSeed,
+        Time:10.0,
+        Category:Farming,
+    }
+}

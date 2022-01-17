@@ -1,0 +1,6 @@
+version=1
+title=foo
+description=foo foo foo
+description=
+tags=
+visibility=public

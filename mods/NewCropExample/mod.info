@@ -1,0 +1,5 @@
+name=FooCrop
+id=fooCrop
+description=example where to edit to and a new crops and translate 
+poster=poster.png
+require=TFFramework
