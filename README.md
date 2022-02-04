@@ -1,2 +1,5 @@
+i made a video for the people who like to watch how to it for v2.
+https://youtu.be/hdX7N3XkRiA
 
-if you look at this exameple you can see the stucture and how little you need to add to properties in one file and your crop will be able to grow. just remember to add the item insite the script and then go to the lua/server/farming/*.lua file and change the foo to your crop name you place in the item scrip and it should work. even made the first line in a translate file so it should be easy to find out how it work over all. 
+
+but else the only thing you need to do is doing what the example do and enable to do the thing the example is the one i made in the video 
