@@ -1,63 +1,64 @@
-module foofarming
-{
-	imports
-	{
-		Base
-	}
+module foofarming {
+imports {
+Base
+}
 
-/**********************************************************************/
-/******************************Seeds***************************************/
-/**********************************************************************/
+item foo{
+        DisplayCategory = Food,
+        HungerChange	=	-14,
+        Weight	=	0.2,
+        Type	=	Food,
+        DaysTotallyRotten	=	8,
+        DisplayName	=	foo,
+        Icon	=	Corn,
+        DaysFresh	=	5,
+        EvolvedRecipe = Soup:14;Stew:14;Stir fry Griddle Pan:14;Stir fry:14;Burger:7;Salad:14;Roasted Vegetables:14;RicePot:14;RicePan:14;PastaPot:14;PastaPan:14;Taco:14;Burrito:14,
+        FoodType = Vegetables,
+        ThirstChange	=	-4,
+        Carbohydrates = 26.74,
+        Proteins = 4.68,
+        Lipids = 1.93,
+        Calories = 88,
+        StaticModel = CylinderFood_Yellow,
+        WorldStaticModel = Corn_Ground,
+		Tags = TF_Veg,
+}
 
-
-    item fooSeed
-	{
+item fooSeed{
 	    DisplayCategory = Gardening,
 		Type				=		Normal,
 		DisplayName			=		foo Seeds,
-		Icon				=		TZ_CabbageLettuceSeeds,
+		Icon				=		TZ_CarrotSeeds,
 		Weight				=		0.009,
 		SurvivalGear = TRUE,
 		WorldStaticModel = Seeds_Ground,
-	}
+		
 
-   
-/**********************************************************************/
-/***************************Seed Packages************************************/
-/**********************************************************************/
+		waterLvl = 35,
+		waterMax = 85,
+		minVeg = 3,
+		maxVeg = 6,
+		minVegAutorized = 10,
+		maxVegAutorized = 15,
+		vegetableName = foo,
+		rand1 = 50,  
+		rand2 = 55,
+ 		seedName = fooSeed,
+		seedPerVeg = 3,
+		waterNeededAsSeedLevel = 85, 
+		lastGrowCycleBeforeGoBad = 248, 
+		Tags = TF_Farming,
+		cropTextures = vegetation_farming_01_72;vegetation_farming_01_73;vegetation_farming_01_74;vegetation_farming_01_75;vegetation_farming_01_76;vegetation_farming_01_77;vegetation_farming_01_78;vegetation_farming_01_79,
+}
 
-
-    item fooSeedbag
-	{
+item fooBagSeed{
 	    DisplayCategory = Gardening,
 		Type				=		Normal,
 		DisplayName			=		foo Seeds Packet,
-		Icon				=		TF_SeedpackEggplant,
+		Icon				=		TZ_SeedpackBroccoli,
 		Weight				=		0.1,
 		SurvivalGear = TRUE,
-		WorldStaticModel = CarrotSeedBag_Ground,
-	}
+		WorldStaticModel = BroccoliSeedBag_Ground,
+}
 
-/*************************~~~~~~~~~~~~~~~~~****************************/
-/******************************Recipes*************************************/
-/*************************~~~~~~~~~~~~~~~~~****************************/
-
-	recipe Open Packet of fooSeeds
-	{
-		fooBagSeed,
-  
-        Result:fooSeed=50,
-        Time:20.0,
-        Category:Farming,
-        Sound:OpenSeedPacket,
-	}
-	 
-	recipe Put foo Seeds in Packet
-    {
-        fooSeed=50,
-
-        Result:fooBagSeed,
-        Time:10.0,
-        Category:Farming,
-    }
 }
