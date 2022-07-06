@@ -3,3 +3,7 @@ https://youtu.be/hdX7N3XkRiA
 
 
 but else the only thing you need to do is doing what the example do and enable to do the thing the example is the one i made in the video 
+
+
+
+mainly you only have to replace the word {foo} with the crop name and change the atribute a little bit
