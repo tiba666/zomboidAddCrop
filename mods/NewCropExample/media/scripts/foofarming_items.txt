@@ -40,7 +40,7 @@ item {foo}Seed{
 		maxVeg = 6,
 		minVegAutorized = 10,
 		maxVegAutorized = 15,
-		vegetableName = foo,
+		vegetableName = {foo},
 		rand1 = 50,  
 		rand2 = 55,
  		seedName = {foo}Seed,
