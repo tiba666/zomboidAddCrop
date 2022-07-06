@@ -21,7 +21,7 @@ item {foo}{
         Calories = 88,
         StaticModel = CylinderFood_Yellow,
         WorldStaticModel = Corn_Ground,
-		Tags = TF_Veg,
+	Tags = TF_Veg,
 }
 
 item {foo}Seed{
