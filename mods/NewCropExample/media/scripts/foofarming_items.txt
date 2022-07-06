@@ -3,7 +3,7 @@ imports {
 Base
 }
 
-item foo{
+item {foo}{
         DisplayCategory = Food,
         HungerChange	=	-14,
         Weight	=	0.2,
@@ -24,10 +24,10 @@ item foo{
 		Tags = TF_Veg,
 }
 
-item fooSeed{
+item {foo}Seed{
 	    DisplayCategory = Gardening,
 		Type				=		Normal,
-		DisplayName			=		foo Seeds,
+		DisplayName			=		{foo} Seeds,
 		Icon				=		TZ_CarrotSeeds,
 		Weight				=		0.009,
 		SurvivalGear = TRUE,
@@ -43,7 +43,7 @@ item fooSeed{
 		vegetableName = foo,
 		rand1 = 50,  
 		rand2 = 55,
- 		seedName = fooSeed,
+ 		seedName = {foo}Seed,
 		seedPerVeg = 3,
 		waterNeededAsSeedLevel = 85, 
 		lastGrowCycleBeforeGoBad = 248, 
@@ -51,10 +51,10 @@ item fooSeed{
 		cropTextures = vegetation_farming_01_72;vegetation_farming_01_73;vegetation_farming_01_74;vegetation_farming_01_75;vegetation_farming_01_76;vegetation_farming_01_77;vegetation_farming_01_78;vegetation_farming_01_79,
 }
 
-item fooBagSeed{
+item {foo}BagSeed{
 	    DisplayCategory = Gardening,
 		Type				=		Normal,
-		DisplayName			=		foo Seeds Packet,
+		DisplayName			=		{foo} Seeds Packet,
 		Icon				=		TZ_SeedpackBroccoli,
 		Weight				=		0.1,
 		SurvivalGear = TRUE,
